@@ -35,6 +35,7 @@
   body {
     min-block-size: 100vh;
     line-height: 1.6;
+    font-size: 14px;
   }
 
   h1,
@@ -69,5 +70,41 @@
   textarea,
   select {
     font: inherit;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Fraunces';
+    src: url("assets/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format("truetype");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("assets/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500 700;
+  }
+
+  :root {
+    /* Primary Colors */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    /* Neutral Colors */
+    --black: hsl(212, 21%, 14%);
+    --gray: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font Families */
+    --font-fraunces: 'Fraunces', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /* Font Sizes */
+    --fs-300: 0.875rem; /* 14px */
+    --fs-400: 1rem; /* 16px */
+    --fs-500: 1.125rem; /* 18px */
+    --fs-600: 1.25rem; /* 20px */
+    --fs-700: 1.5rem; /* 24px */
   }
 }
