@@ -106,5 +106,67 @@
     --fs-500: 1.125rem; /* 18px */
     --fs-600: 1.25rem; /* 20px */
     --fs-700: 1.5rem; /* 24px */
+
+    html {
+      font-family: var(--font-montserrat);
+      line-height: 1.5;
+    }
+
+    body {
+      background-color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    #main {
+      background-color: var(--white);
+      width: 60%;
+      border-radius: 2em;
+    }
+
+    img {
+      width: 100%;
+      border-top-left-radius: 2em;
+      border-top-right-radius: 2em;
+    }
+
+    h1 {
+      font-family: var(--font-montserrat);
+      font-weight: 500;
+      font-size: var(--fs-500);
+      color: var(--gray);
+    }
+
+    h2 {
+      font-family: var(--font-fraunces);
+      font-weight: 700;
+      font-size: var(--fs-700);
+      color: var(--black);
+    }
+    p {
+      font-family: var(--font-montserrat);
+      font-size: var(--fs-300);
+      color: var(--gray);
+      margin-bottom: 1.5rem;
+    }
+
+    .regular {
+      font-family: var(--font-montserrat);
+      font-weight: 700;
+      font-size: var(--fs-700);
+      color: var(--green-500);
+    }
+
+    .line-thru {
+      font-family: var(--font-montserrat);
+      font-weight: 400;
+      font-size: var(--fs-300);
+      color: var(--gray);
+      text-decoration: line-through;
+      margin-bottom: 1.5rem;
+    }
   }
 }
