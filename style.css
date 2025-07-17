@@ -107,123 +107,115 @@
     --fs-500: 1.5rem;
     --fs-600: 1.75rem;
     --fs-700: 2rem;
+  }
 
-    html {
-      font-family: var(--font-montserrat);
-      line-height: 1.5;
-    }
+  html {
+    font-family: var(--font-montserrat);
+    line-height: 1.5;
+  }
 
-    body {
-      background-color: var(--cream);
-      display: grid;
-      grid-template-columns: 15% 70% 15%;
-      grid-template-rows: auto;
-      align-self: center;
-      padding: 2em;
-    }
+  body {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+  }
 
-    #main {
-      grid-column: 2;
-      background-color: var(--white);
-      width: 100%;
-      border-radius: 2em;
-      padding-bottom: 2em;
-    }
+  .wrapper {
+    background-color: var(--white);
+    max-width: 60%;
+    border-radius: 1em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+  }
 
-    img {
-      max-inline-size: 100%;
-      block-size: auto;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-top-left-radius: 2em;
-      border-top-right-radius: 2em;
-      margin-bottom: 1em;
-    }
+  img {
+    width: 100%;
+    block-size: auto;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-bottom: 1em;
+  }
 
-    h1 {
-      grid-column: 1;
-      font-family: var(--font-montserrat);
-      font-weight: 500;
-      font-size: var(--fs-400);
-      color: var(--gray);
-      padding: 0.5em 0;
-    }
+  .text-box {
+    display: grid;
+    padding: 0 1.5em;
+  }
 
-    h2 {
-      grid-column: 1/2;
-      font-family: var(--font-fraunces);
-      font-weight: 700;
-      font-size: var(--fs-700);
-      color: var(--black);
-      padding: 0.5em 0;
-    }
+  h1 {
+    grid-column: 1;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: var(--fs-400);
+    text-transform: uppercase;
+    color: var(--gray);
+    padding: 0.25em 0;
+  }
 
-    p {
-      grid-row: 3;
-      font-family: var(--font-montserrat);
-      font-size: var(--fs-300);
-      color: var(--gray);
-      padding: 0.5em 0;
-    }
+  h2 {
+    grid-column: 1/2;
+    font-family: var(--font-fraunces);
+    font-weight: 700;
+    font-size: var(--fs-700);
+    color: var(--black);
+    padding: 0.25em 0;
+  }
 
-    .wrapper {
-      display: grid;
-      grid-template-columns: 90% 10%;
-      padding-left: 2em;
-    }
+  p {
+    grid-row: 3;
+    font-family: var(--font-montserrat);
+    font-size: var(--fs-300);
+    color: var(--gray);
+    padding: 0.25em 0;
+  }
 
-    .regular {
-      grid-row: 4;
-      grid-column: 1;
-      font-family: var(--font-fraunces);
-      font-weight: 700;
-      font-size: var(--fs-700);
-      color: var(--green-500);
-    }
+  .regular {
+    grid-row: 4;
+    grid-column: 1;
+    font-family: var(--font-fraunces);
+    font-weight: 700;
+    font-size: var(--fs-700);
+    color: var(--green-500);
+  }
 
-    .line-thru {
-      grid-row: 4;
-      grid-column: 1;
-      padding: 2em 0;
-      padding-left: 10em;
-      font-family: var(--font-montserrat);
-      font-weight: 400;
-      font-size: var(--fs-300);
-      color: var(--gray);
-      text-decoration: line-through;
-    }
+  .line-thru {
+    grid-row: 4;
+    grid-column: 1;
+    padding-top: 1.5em;
+    padding-left: 10em;
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: var(--fs-300);
+    color: var(--gray);
+    text-decoration: line-through;
+  }
 
-    button {
-      grid-row: 5;
-      background-color: var(--green-500);
-      color: var(--white);
-      font-family: var(--font-montserrat);
-      font-size: var(--fs-300);
-      border-radius: 0.5em;
-      padding: 1em;
-    }
+  button {
+    grid-row: 5;
+    background-color: var(--green-500);
+    color: var(--white);
+    font-family: var(--font-montserrat);
+    font-size: var(--fs-300);
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    background-image: url(./images/icon-cart.svg);
+    background-position: 6em;
+    background-repeat: no-repeat;
+    background-size: 1em;
+  }
 
-    .icon img {
- 
-    }
-
-    footer {
-      grid-column: 2;
-      grid-row: 6;
-      align-self: center;
-    }
-
-    .attribution {
-      font-size: 1em;
-      text-align: center;
-    }
-    .attribution a {
-      color: var(--green-700);
-      text-decoration: none;
-    }
-    .attribution a:hover {
-      text-decoration: underline;
-      color: var(--green-500);
-    }
+  .attribution {
+    font-size: 1em;
+    text-align: center;
+  }
+  .attribution a {
+    color: var(--green-700);
+    text-decoration: none;
+  }
+  .attribution a:hover {
+    text-decoration: underline;
+    color: var(--green-500);
   }
 }
