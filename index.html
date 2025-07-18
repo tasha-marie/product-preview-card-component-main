@@ -18,30 +18,34 @@
   <body>
     <div class="wrapper">
       <main id="main">
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="a square bottle of Chanel perfume laying flat on a white table with a green branch with long leaves in the top and bottom corners"
-          width="684"
-          height="700"
-          loading="lazy"
-          decoding="async"
-          srcset="
-            ./images/image-product-mobile.jpg  700w,
-            ./images/image-product-desktop.jpg 600w
-          "
-        />
-        <div class="text-box">
-          <h1>Perfume</h1>
-          <h2>Gabrielle Essence Eau De Parfum</h2>
-          <p>
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <p class="regular">$149.99</p>
-          <p class="line-thru">$169.99</p>
-            <button class="cart">
-              Add to Cart
-            </button>
+        <div class="container">
+          <article class="perfume">
+            <img
+              src="./images/image-product-mobile.jpg"
+              alt="a square bottle of Chanel perfume laying flat on a white table with a green branch with long leaves in the top and bottom corners"
+              width="684"
+              height="700"
+              loading="lazy"
+              decoding="async"
+              srcset="
+                ./images/image-product-mobile.jpg  600w,
+                ./images/image-product-desktop.jpg 700w
+              "
+            />
+            <div class="text">
+              <h1>Perfume</h1>
+              <h2>Gabrielle Essence Eau De Parfum</h2>
+              <p>
+                A floral, solar and voluptuous interpretation composed by Olivier
+                Polge, Perfumer-Creator for the House of CHANEL.
+              </p>
+              <ul>
+                <li class="regular">$149.99</li>
+                <li class="line-thru">$169.99</li>
+              </ul>
+              <button class="cart">Add to Cart</button>
+            </div>
+          </article>
         </div>
       </main>
     </div>
